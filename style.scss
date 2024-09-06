@@ -45,9 +45,18 @@ svg:hover path {
     display: flex;
     flex-direction: column;
 
-    &__div_nav {
+    &__header {
         @extend %flex_al-it__center;
-        justify-content: end;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    &__h1 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: $svg_txt_orange;
     }
 
     &__nav {
@@ -56,7 +65,69 @@ svg:hover path {
         gap: 16px;
         padding-top: 68px;
         padding-bottom: 68px;
-        padding-right: 236px;
+    }
+
+    &__details[open] .product__summary {
+        color: $svg_txt_orange;
+    }
+
+    &__img {
+        position: absolute;
+        left: -254px;
+        top: 156px;
+    }
+
+    &__sub_box {
+        border: 1px solid black;
+        width: 1140px;
+        height: 600px;
+        position: absolute;
+        top: 833px;
+        left: 0px;
+        background-color: white;
+        color: F16D7F;
+        @extend %flex_al-it__center;
+        flex-direction: column;
+        align-items: center;
+
+        &_heading {
+            color: #F16D7F;
+            @extend %flex_al-it__center;
+            justify-content: center;
+            flex-direction: column;
+            padding-top: 66px;
+        }
+
+        &_border1 {
+            padding-top: 10px;
+            height: 3px;
+            width: 60px;
+            color: #EF5B70;
+            border-bottom: 3px solid #EF5B70;
+        }
+
+        &_h2 {
+            padding-top: 12px;
+            padding-top: 10px;
+            color: #4D4D4D;
+        }
+
+        &_p {
+            padding-top: 54px;
+            color: #5E5E5E;
+        }
+
+        &_price {
+            padding-top: 40px;
+            color: #EF5B70;
+        }
+
+        &_border2 {
+            padding-top: 10px;
+            height: 1px;
+            width: 640px;
+            border-bottom: 3px solid #EF5B70;
+        }
     }
 
     &__summary {
@@ -67,6 +138,7 @@ svg:hover path {
         @extend %flex_al-it__center;
         justify-content: space-between;
         gap: 30px;
+        margin-bottom: 30px;
     }
 
     &__item {
@@ -116,6 +188,7 @@ svg:hover path {
         }
     }
 }
+
 
 .subscribe {
     background-image: url(./img/photo\ subscribe.png);
@@ -183,7 +256,7 @@ svg:hover path {
         background: #E1E1E1;
     }
 
-    &__input:hover{
+    &__input:hover {
         background: rgba(0, 0, 0, 0);
         color: #000;
         box-shadow: inset 0 0 0 3px $svg_txt_orange;
@@ -244,8 +317,7 @@ input:focus {
         color: #FBFBFB;
     }
 
-    &__brand-svg:hover .social-svg{
+    &__brand-svg:hover .social-svg {
         fill: white;
     }
 }
-

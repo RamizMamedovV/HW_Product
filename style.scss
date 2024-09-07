@@ -153,6 +153,25 @@ svg:hover path {
             color: #6F6E6E;
             margin-right: 9px;
         }
+
+        &_btn {
+            @extend %flex_al-it__center;
+            gap: 24px;
+            margin-top: 48px;
+            background-color: $svg_txt_orange;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            border: none;
+            padding: 14px 56px 9px 24px;
+        }
+
+        &_btn:hover{
+            background-color: white;
+            border: 1px solid $svg_txt_orange;
+            color: $svg_txt_orange;
+        }
     }
 
 

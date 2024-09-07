@@ -11,7 +11,7 @@ summary {
   list-style: none;
 }
 
-.social, .subscribe__box_input_btn, .subscribe__button, .subscribe__right, .subscribe__left, .subscribe, .product__item_img_box, .product__item, .product__content, .product__sub_box_menu, .product__sub_box_heading, .product__sub_box, .product__nav, .product__header, .header__right, .header__left, .header {
+.social, .subscribe__box_input_btn, .subscribe__button, .subscribe__right, .subscribe__left, .subscribe, .product__item_img_box, .product__item, .product__content, .product__sub_box_btn, .product__sub_box_menu, .product__sub_box_heading, .product__sub_box, .product__nav, .product__header, .header__right, .header__left, .header {
   display: flex;
   align-items: center;
 }
@@ -126,6 +126,22 @@ svg:hover path {
   line-height: 17px;
   color: #6F6E6E;
   margin-right: 9px;
+}
+.product__sub_box_btn {
+  gap: 24px;
+  margin-top: 48px;
+  background-color: #F16D7F;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  border: none;
+  padding: 14px 56px 9px 24px;
+}
+.product__sub_box_btn:hover {
+  background-color: white;
+  border: 1px solid #F16D7F;
+  color: #F16D7F;
 }
 .product__content {
   justify-content: space-between;

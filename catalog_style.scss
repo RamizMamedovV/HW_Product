@@ -54,6 +54,7 @@ svg:hover path {
         @extend %flex_al-it__center;
         justify-content: space-between;
         position: relative;
+        background: #F8F3F4;
     }
 
     &__h1 {
@@ -175,7 +176,6 @@ svg:hover path {
         }
     }
 
-
     &__content {
         display: grid;
         grid-template-columns: repeat(3, 360px);
@@ -232,6 +232,39 @@ svg:hover path {
         }
     }
 }
+
+
+.filter{
+    margin-right: 320px;
+}
+
+
+
+.filter-box{
+    padding-top: 52px;
+    padding-bottom: 64px;
+    @extend %flex_al-it__center;
+
+    &__choice{
+        @extend %flex_al-it__center;
+        gap: 28px;
+    }
+}
+
+.choice{
+    @extend %flex_al-it__center;
+    gap: 10px;
+}
+
+
+.pagination{
+    @extend %flex_al-it__center;
+    justify-content: center;
+    padding-top: 48px;
+    padding-bottom: 96px;
+}
+
+
 
 
 .article {

@@ -11,7 +11,7 @@ summary {
   list-style: none;
 }
 
-.social, .subscribe__box_input_btn, .subscribe__button, .subscribe__right, .subscribe__left, .subscribe, .product__item_img_box, .product__item, .product__sub_box_btn, .product__sub_box_menu, .product__sub_box_heading, .product__sub_box, .product__nav, .product__header, .header__right, .header__left, .header {
+.social, .subscribe__box_input_btn, .subscribe__button, .subscribe__right, .subscribe__left, .subscribe, .pagination, .choice, .filter-box__choice, .filter-box, .product__item_img_box, .product__item, .product__sub_box_btn, .product__sub_box_menu, .product__sub_box_heading, .product__sub_box, .product__nav, .product__header, .header__right, .header__left, .header {
   display: flex;
   align-items: center;
 }
@@ -44,6 +44,7 @@ svg:hover path {
 .product__header {
   justify-content: space-between;
   position: relative;
+  background: #F8F3F4;
 }
 .product__h1 {
   font-style: normal;
@@ -190,6 +191,28 @@ svg:hover path {
   font-weight: 400;
   font-size: 16px;
   color: #F16D7F;
+}
+
+.filter {
+  margin-right: 320px;
+}
+
+.filter-box {
+  padding-top: 52px;
+  padding-bottom: 64px;
+}
+.filter-box__choice {
+  gap: 28px;
+}
+
+.choice {
+  gap: 10px;
+}
+
+.pagination {
+  justify-content: center;
+  padding-top: 48px;
+  padding-bottom: 96px;
 }
 
 .article {

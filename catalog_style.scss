@@ -234,30 +234,69 @@ svg:hover path {
 }
 
 
-.filter{
-    margin-right: 320px;
+.filter-font {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
 }
 
 
-
-.filter-box{
+.filter-box {
     padding-top: 52px;
     padding-bottom: 64px;
     @extend %flex_al-it__center;
 
-    &__choice{
+    &__filter {
+        margin-right: 320px;
+        position: relative;
+        // width: 44px;
+        // height: 17px;
+        // left: 230px;
+        // top: 274px;
+    }
+
+    &__sub-nav{
+        @extend %flex_al-it__center;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        width: 360px;
+        height: 532px;
+        border: 1px solid black;
+    }
+
+
+    &__det{
+        border-left: 5px solid #EF5B70;
+        border-bottom: 1px solid #EF5B70;
+    }
+
+    &__sum{
+        padding-left: 12px;
+    }
+
+
+
+
+
+
+
+    &__choice {
         @extend %flex_al-it__center;
         gap: 28px;
     }
+
+    &__summary {
+        @extend %flex_al-it__center;
+        gap: 10px;
+    }
 }
 
-.choice{
-    @extend %flex_al-it__center;
-    gap: 10px;
-}
 
 
-.pagination{
+.pagination {
     @extend %flex_al-it__center;
     justify-content: center;
     padding-top: 48px;

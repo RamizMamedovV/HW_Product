@@ -168,7 +168,7 @@ svg:hover path {
             padding: 14px 56px 9px 24px;
         }
 
-        &_btn:hover{
+        &_btn:hover {
             background-color: white;
             border: 1px solid $svg_txt_orange;
             color: $svg_txt_orange;
@@ -233,6 +233,57 @@ svg:hover path {
     }
 }
 
+
+.article {
+    padding-top: 103px;
+    padding-bottom: 104px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-around;
+    background: #222224;
+
+    &_item {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &_item_h5_1_margin28 {
+        margin-top: 28px;
+    }
+
+    &_item_h5_2_margin19 {
+        margin-top: 19px;
+    }
+
+    &_item_h5_3_margin25 {
+        margin-top: 25px;
+    }
+
+    &_item_h5 {
+        color: #FBFBFB;
+        font-family: Lato;
+        font-size: 19.96px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &_item_p {
+        margin-top: 16px;
+        color: #FBFBFB;
+        text-align: center;
+        font-family: Lato;
+        font-size: 13.972px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        max-width: 82%;
+    }
+}
 
 
 .subscribe {

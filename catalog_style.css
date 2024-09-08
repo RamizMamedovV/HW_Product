@@ -192,6 +192,51 @@ svg:hover path {
   color: #F16D7F;
 }
 
+.article {
+  padding-top: 103px;
+  padding-bottom: 104px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: space-around;
+  background: #222224;
+}
+.article_item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+.article_item_h5_1_margin28 {
+  margin-top: 28px;
+}
+.article_item_h5_2_margin19 {
+  margin-top: 19px;
+}
+.article_item_h5_3_margin25 {
+  margin-top: 25px;
+}
+.article_item_h5 {
+  color: #FBFBFB;
+  font-family: Lato;
+  font-size: 19.96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.article_item_p {
+  margin-top: 16px;
+  color: #FBFBFB;
+  text-align: center;
+  font-family: Lato;
+  font-size: 13.972px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  max-width: 82%;
+}
+
 .subscribe {
   background-image: url(./img/photo\ subscribe.png);
   background-color: rgba(244, 244, 244, 0.7);

@@ -262,7 +262,7 @@ svg:hover path {
         position: relative;
         width: 360px;
         box-sizing: border-box;
-        
+
         &[open] .filter-box__summary {
             color: $svg_txt_orange;
         }
@@ -352,13 +352,49 @@ svg:hover path {
     &__choice {
         @extend %flex_al-it__center;
         gap: 28px;
+        margin-left: 23px;
     }
 
     &__summary {
         @extend %flex_al-it__center;
         gap: 10px;
     }
+
+
 }
+
+.choice-box {
+    display: flex;
+    flex-direction: column;
+    padding-top: 9px;
+    padding-bottom: 12px;
+    padding-left: 9px;
+    gap: 9px;
+    position: absolute;
+    width: 79px;
+    height: 103px;
+    background: #FFF;
+}
+
+.choice-sort {
+    @extend %flex_al-it__center;
+    gap: 9px;
+}
+
+.choice-sort-type {
+    // font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6F6E6E;
+}
+
+
+
+
+
+
 
 
 

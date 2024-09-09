@@ -7,6 +7,7 @@ body {
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 summary {
@@ -242,6 +243,14 @@ svg:hover path {
     color: #000000;
 }
 
+.choice-font {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+
 
 .filter-box {
     padding-top: 52px;
@@ -249,33 +258,90 @@ svg:hover path {
     @extend %flex_al-it__center;
 
     &__filter {
-        margin-right: 320px;
+        padding: 13px 16px 16px;
         position: relative;
-        // width: 44px;
-        // height: 17px;
-        // left: 230px;
-        // top: 274px;
+        width: 360px;
+        box-sizing: border-box;
+        
+        &[open] .filter-box__summary {
+            color: $svg_txt_orange;
+        }
+
+        &[open] path {
+            fill: #EF5B70;
+        }
+
+        &[open] {
+            background: #FFF;
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        }
     }
 
-    &__sub-nav{
-        @extend %flex_al-it__center;
+    // &__filter[open] .filter-box__summary {
+    //     color: $svg_txt_orange;
+    // }
+
+    // &__filter[open] .filter-box__summary-svg {
+    //     fill: #EF5B70;
+    // }
+
+    &__sub-nav {
+        display: flex;
         flex-direction: column;
+        gap: 18px;
+        padding-top: 16px;
+        padding-left: 16px;
+        padding-bottom: 10px;
         background: white;
         position: absolute;
+        left: 0px;
         width: 360px;
-        height: 532px;
-        border: 1px solid black;
+        // min-height: 532px;
+        box-sizing: border-box;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     }
 
 
-    &__det{
+    &__det {
+        @extend %flex_al-it__center;
+        flex-direction: column;
+    }
+
+    &__det-details {
+        display: flex;
+        flex-direction: column;
+        padding-top: 24px;
+        padding-left: 17px;
+    }
+
+    &__sum {
+        padding-left: 12px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
         border-left: 5px solid #EF5B70;
         border-bottom: 1px solid #EF5B70;
+        height: 30px;
     }
 
-    &__sum{
-        padding-left: 12px;
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
     }
+
+    &__list-a {
+        list-style: none;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+    }
+
 
 
 

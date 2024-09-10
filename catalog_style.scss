@@ -43,7 +43,40 @@ svg:hover path {
     &__right {
         @extend %flex_al-it__center;
         gap: 40px;
+        position: relative;
     }
+
+}
+
+#burger  {
+    position: absolute;
+    visibility: hidden;
+
+    &:checked ~ .burger__sub-nav{
+        right: 0;
+        
+    }
+}
+
+.box-for-burger-menu {
+    overflow: hidden;
+}
+
+.burger__sub-nav {
+    padding: 30px;
+    box-sizing: border-box;
+    @extend %flex_al-it__center;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    width: 232px;
+    height: 300px;
+    z-index: 1;
+    right: -1000px;
+    top: 50px;
+    background-color: #FFF;
+    box-shadow: 6px 4px 35px rgba(239, 83, 83, 0.21);
+    transition: right .3s;
 }
 
 

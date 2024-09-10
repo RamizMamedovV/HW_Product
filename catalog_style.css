@@ -12,7 +12,7 @@ summary {
   list-style: none;
 }
 
-.social, .subscribe__box_input_btn, .subscribe__button, .subscribe__right, .subscribe__left, .subscribe, .pagination, .choice-sort, .filter-box__summary, .filter-box__choice, .filter-box__det, .filter-box, .product__item_img_box, .product__item, .product__sub_box_btn, .product__sub_box_menu, .product__sub_box_heading, .product__sub_box, .product__nav, .product__header, .header__right, .header__left, .header {
+.social, .subscribe__box_input_btn, .subscribe__button, .subscribe__right, .subscribe__left, .subscribe, .pagination, .choice-sort, .filter-box__summary, .filter-box__choice, .filter-box__det, .filter-box, .product__item_img_box, .product__item, .product__sub_box_btn, .product__sub_box_menu, .product__sub_box_heading, .product__sub_box, .product__nav, .product__header, .burger__sub-nav, .header__right, .header__left, .header {
   display: flex;
   align-items: center;
 }
@@ -36,6 +36,35 @@ svg:hover path {
 }
 .header__right {
   gap: 40px;
+  position: relative;
+}
+
+#burger {
+  position: absolute;
+  visibility: hidden;
+}
+#burger:checked ~ .burger__sub-nav {
+  right: 0;
+}
+
+.box-for-burger-menu {
+  overflow: hidden;
+}
+
+.burger__sub-nav {
+  padding: 30px;
+  box-sizing: border-box;
+  flex-direction: column;
+  gap: 15px;
+  position: absolute;
+  width: 232px;
+  height: 300px;
+  z-index: 1;
+  right: -1000px;
+  top: 50px;
+  background-color: #FFF;
+  box-shadow: 6px 4px 35px rgba(239, 83, 83, 0.21);
+  transition: right 0.3s;
 }
 
 .product {

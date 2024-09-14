@@ -12,7 +12,7 @@ summary {
   list-style: none;
 }
 
-.social, .subscribe__box_input_btn, .subscribe__button, .subscribe__right, .subscribe__left, .subscribe, .burger__sub-nav, .header__right, .header__left, .header {
+.carts__buttons, .carts__cart-info_p-box, .social, .subscribe__box_input_btn, .subscribe__button, .subscribe__right, .subscribe__left, .subscribe, .burger__sub-nav, .header__right, .header__left, .header {
   display: flex;
   align-items: center;
 }
@@ -166,4 +166,100 @@ input:focus {
 }
 .social__brand-svg:hover .social-svg {
   fill: white;
+}
+
+.carts__buttons, .carts__cart-info_p-box, .header, .header__left, .header__right, .burger__sub-nav, .subscribe, .subscribe__left, .subscribe__right, .subscribe__button, .subscribe__box_input_btn, .social {
+  display: flex;
+  align-items: center;
+}
+
+.head {
+  background: #F8F3F4;
+  padding-top: 58px;
+  padding-bottom: 64px;
+}
+.head__h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+}
+
+.main {
+  display: flex;
+}
+
+.carts {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 70px;
+  padding: 70px 28px 130px 0px;
+}
+.carts__item {
+  max-height: 306px;
+  display: flex;
+  margin-top: 40px;
+  box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+}
+.carts__img {
+  height: 306px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.carts__cart-info {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  padding: 28px 22px 54px 30px;
+  max-height: 306px;
+  max-width: 652px;
+}
+.carts__cart-info-head {
+  display: flex;
+  gap: 125px;
+  justify-content: space-between;
+  padding-bottom: 29px;
+}
+.carts__cart-info_h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #222222;
+  max-width: 194px;
+}
+.carts__cart-info_p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+  margin-right: 10px;
+}
+.carts__cart-info_p-box {
+  gap: 32px;
+}
+.carts__cart-info_price {
+  color: #F16D7F;
+}
+.carts__buttons {
+  gap: 170px;
+}
+.carts__btn {
+  padding: 20px 39px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.carts__btn:hover {
+  background: #F16D7F;
+}
+
+.input-area {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=cart_style.css.map */

@@ -98,7 +98,7 @@
                 <img class="carts__img" src="../catalog_img/catalog_img_11.png" alt="cat1_img">
                 <div class="carts__cart-info">
                     <span class="carts__cart-info-head">
-                        <h3 class="carts__cart-info_h3">MANGO PEOPLE <br> T-SHIRT</h3>
+                        <h3 class="carts__cart-info_h3">MANGO PEOPLE T-SHIRT</h3>
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z"
@@ -119,19 +119,43 @@
                                 fill="#656565" />
                         </svg>
                     </div>
+
                 </div>
             </div>
 
             <div class="carts__buttons">
-                <button class="carts__btn">
+                <button class="carts__btn btn_hover">
                     CLEAR SHOPPING CART
                 </button>
-                <button class="carts__btn">
+                <button class="carts__btn btn_hover">
                     CONTINUE SHOPPING
                 </button>
             </div>
         </div>
-        <div class="input-area"></div>
+        <div class="form">
+            <form class="form__input-area" action="/submit" method="POST">
+
+                <h2 class="form__h2">SHIPPING ADRESS</h2>
+
+                <input class="form__input-area_item" type="text" placeholder="City: ">
+                <input class="form__input-area_item" type="text" placeholder="State: ">
+                <input class="form__input-area_item" type="text" placeholder="Postcode / Zip: ">
+
+                <button class="form__btn btn_hover">GET A QUOTE</button>
+            </form>
+
+            <section class="form__total">
+                <div class="form__total-txt">
+                    <p class="form__p">SUB TOTAL<span class="orange__txt">$900</span> </p>
+                    <p class="form__p-h2">GRAND TOTAL<span class="orange__txt">$900</span> </p>
+                </div>
+                <div class="form__btn-box">
+                    <button class="form__btn-checkout btn_hover">PROCEED TO CHECKOUT</button>
+                </div>
+
+            </section>
+
+        </div>
     </main>
 
 

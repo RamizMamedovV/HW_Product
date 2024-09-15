@@ -203,8 +203,7 @@ input:focus {
 .social {
     background: #000;
     @extend %flex_al-it__center;
-    gap: 812px;
-
+    justify-content: space-between;
     &__txt {
         font-style: normal;
         font-weight: 400;

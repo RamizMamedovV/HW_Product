@@ -159,7 +159,7 @@ input:focus {
 
 .social {
   background: #000;
-  gap: 812px;
+  justify-content: space-between;
 }
 .social__txt {
   font-style: normal;
@@ -356,4 +356,43 @@ input:focus {
   font-size: 16px;
   line-height: 19px;
   color: #4A4A4A;
+}
+
+@media (min-width: 780px) and (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 390px);
+    padding-right: calc(50% - 390px);
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+  }
+  .carts {
+    padding: 0;
+    padding-top: 59px;
+    align-items: center;
+  }
+  .carts__item {
+    width: 748px;
+  }
+  .carts__buttons {
+    gap: 49px;
+    justify-content: center;
+  }
+  .form {
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+    gap: 17px;
+    padding-bottom: 128px;
+  }
+  .form__total {
+    margin: 0;
+  }
+  .subscribe {
+    flex-direction: column;
+    gap: 80px;
+  }
 }/*# sourceMappingURL=cart_style.css.map */

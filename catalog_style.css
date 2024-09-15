@@ -479,7 +479,7 @@ input:focus {
 
 .social {
   background: #000;
-  gap: 812px;
+  justify-content: space-between;
 }
 .social__txt {
   font-style: normal;

@@ -47,6 +47,11 @@
     &__item {
         max-height: 306px;
         display: flex;
+        box-shadow: (5px 7px 10px rgba(0, 0, 0, 0.13));
+
+    }
+
+    &__item:hover {
         box-shadow: (17px 19px 24px rgba(0, 0, 0, 0.13));
 
     }
@@ -223,7 +228,7 @@
     }
 }
 
-@media (min-width: 780px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
 
     $widthSite: 780px;
 
@@ -272,5 +277,19 @@
         // align-items: center;
         flex-direction: column;
         gap: 80px;
+    }
+}
+
+@media (max-width: 780px) {
+
+    $widthSite: 600px;
+
+    .center {
+        padding-left: calc(50% - $widthSite / 2);
+        padding-right: calc(50% - $widthSite / 2);
+    }
+
+    .form {
+        flex-direction: column;
     }
 }

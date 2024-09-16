@@ -215,6 +215,9 @@ input:focus {
 .carts__item {
   max-height: 306px;
   display: flex;
+  box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.13);
+}
+.carts__item:hover {
   box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
 }
 .carts__img {
@@ -358,7 +361,7 @@ input:focus {
   color: #4A4A4A;
 }
 
-@media (min-width: 780px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .center {
     padding-left: calc(50% - 390px);
     padding-right: calc(50% - 390px);
@@ -394,5 +397,14 @@ input:focus {
   .subscribe {
     flex-direction: column;
     gap: 80px;
+  }
+}
+@media (max-width: 780px) {
+  .center {
+    padding-left: calc(50% - 300px);
+    padding-right: calc(50% - 300px);
+  }
+  .form {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=cart_style.css.map */

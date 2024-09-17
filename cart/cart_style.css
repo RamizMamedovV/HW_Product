@@ -25,6 +25,14 @@ svg:hover path {
   fill: #F16D7F;
 }
 
+#no-hover:hover path {
+  fill: inherit;
+}
+
+svg.no-hover:hover path {
+  fill: inherit;
+}
+
 .center {
   padding-left: calc(50% - 570px);
   padding-right: calc(50% - 570px);
@@ -247,6 +255,9 @@ input:focus {
   color: #222222;
   max-width: 194px;
 }
+.carts__cart-info_price {
+  color: #F16D7F;
+}
 .carts__cart-info_p {
   font-style: normal;
   font-weight: 400;
@@ -257,9 +268,6 @@ input:focus {
 }
 .carts__cart-info_p-box {
   gap: 4px;
-}
-.carts__cart-info_price {
-  color: #F16D7F;
 }
 .carts__buttons {
   gap: 140px;

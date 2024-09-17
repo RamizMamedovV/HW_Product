@@ -86,6 +86,10 @@
             max-width: 194px;
         }
 
+        &_price {
+            color: $svg_txt_orange;
+        }
+
         &_p {
             font-style: normal;
             font-weight: 400;
@@ -93,6 +97,7 @@
             line-height: 26px;
             color: #575757;
             margin-right: 10px;
+
         }
 
         &_p-box {
@@ -100,9 +105,7 @@
             gap: 4px;
         }
 
-        &_price {
-            color: $svg_txt_orange;
-        }
+
     }
 
     &__buttons {
@@ -121,6 +124,7 @@
     }
 
 }
+
 
 .form {
     display: flex;

@@ -31,6 +31,16 @@ svg:hover path {
     fill: $svg_txt_orange;
 }
 
+// example1 for svg by id
+#no-hover:hover path{
+    fill: inherit;
+}
+
+// example2 for svg by class
+svg.no-hover:hover path{
+    fill: inherit;
+}
+
 .center {
     padding-left: calc(50% - $widthSite / 2);
     padding-right: calc(50% - $widthSite / 2);

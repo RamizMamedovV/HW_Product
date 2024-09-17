@@ -274,6 +274,11 @@ svg:hover path {
     font-size: 14px;
     line-height: 17px;
     color: #000000;
+    z-index: -1;
+
+    &_svg {
+        z-index: -1;
+    }
 }
 
 .choice-font {

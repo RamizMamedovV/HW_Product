@@ -247,13 +247,16 @@ input:focus {
   justify-content: space-between;
   padding-bottom: 29px;
 }
-.carts__cart-info_h3 {
+.carts__cart-info_a {
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
   color: #222222;
   max-width: 194px;
+}
+.carts__cart-info_a:hover {
+  color: #F16D7F;
 }
 .carts__cart-info_price {
   color: #F16D7F;
@@ -267,7 +270,12 @@ input:focus {
   margin-right: 10px;
 }
 .carts__cart-info_p-box {
-  gap: 4px;
+  gap: 26px;
+}
+.carts__cart-info_p-box_input {
+  width: 24px;
+  height: 15px;
+  padding-left: 10px;
 }
 .carts__buttons {
   gap: 140px;

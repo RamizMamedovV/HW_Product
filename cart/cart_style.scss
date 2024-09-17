@@ -77,13 +77,17 @@
             padding-bottom: 29px;
         }
 
-        &_h3 {
+        &_a {
             font-style: normal;
             font-weight: 400;
             font-size: 24px;
             line-height: 29px;
             color: #222222;
             max-width: 194px;
+
+            &:hover {
+                color: $svg_txt_orange;
+            }
         }
 
         &_price {
@@ -102,7 +106,13 @@
 
         &_p-box {
             @extend %flex_al-it__center;
-            gap: 4px;
+            gap: 26px;
+
+            &_input {
+                width: 24px;
+                height: 15px;
+                padding-left: 10px;
+            }
         }
 
 

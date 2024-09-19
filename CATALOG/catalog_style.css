@@ -89,6 +89,22 @@ svg:hover path {
   padding-top: 68px;
   padding-bottom: 68px;
 }
+.product__breadcrumbs {
+  display: flex;
+  gap: 8px;
+  list-style-type: none;
+}
+.product__breadcrumbs-li {
+  display: flex;
+  gap: 8px;
+}
+.product__breadcrumbs-li:not(:last-child)::after {
+  content: "/";
+}
+.product__breadcrumbs-li:last-child {
+  font-weight: 700;
+  color: #F16D7F;
+}
 .product__details[open] .product__summary {
   color: #F16D7F;
 }
@@ -96,6 +112,7 @@ svg:hover path {
   position: absolute;
   left: -254px;
   top: 156px;
+  z-index: 1;
 }
 .product__sub_box {
   border: 1px solid black;
@@ -229,10 +246,10 @@ svg:hover path {
   font-size: 14px;
   line-height: 17px;
   color: #000000;
-  z-index: -1;
+  z-index: 0;
 }
 .filter-font_svg {
-  z-index: -1;
+  z-index: 0;
 }
 
 .choice-font {

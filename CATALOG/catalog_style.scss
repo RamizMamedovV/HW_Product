@@ -1,4 +1,4 @@
-@import 'vars';
+@import '../vars';
 
 body {
     font-family: "Lato", system-ui;
@@ -107,6 +107,29 @@ svg:hover path {
         padding-bottom: 68px;
     }
 
+    &__breadcrumbs {
+        display: flex;
+        gap: 8px;
+        list-style-type: none;
+
+        &-li {
+            display: flex;
+            gap: 8px;
+        }
+
+        &-li:not(:last-child)::after {
+            content: '/';
+        }
+
+        &-li:last-child {
+            font-weight: 700;
+            color: $svg_txt_orange;
+        }
+
+    }
+
+
+
     &__details[open] .product__summary {
         color: $svg_txt_orange;
     }
@@ -115,6 +138,7 @@ svg:hover path {
         position: absolute;
         left: -254px;
         top: 156px;
+        z-index: 1;
     }
 
     &__sub_box {
@@ -274,10 +298,10 @@ svg:hover path {
     font-size: 14px;
     line-height: 17px;
     color: #000000;
-    z-index: -1;
+    z-index: 0;
 
     &_svg {
-        z-index: -1;
+        z-index: 0;
     }
 }
 

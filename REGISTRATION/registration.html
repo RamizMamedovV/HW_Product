@@ -62,15 +62,20 @@
         </section>
 
         <main class="register center">
-            <div class="register__left">
+            <form class="register__left">
                 <h2 class="register__left-name">Your Name</h2>
                 <input class="register__left-input" placeholder="First Name" type="text">
                 <input class="register__left-input" placeholder="Last Name" type="text">
 
-                <div class="register__left-check-box">
-                    <label class="register__left-check-box_item"><input class="register__left-check-box_item-input" type="checkbox">Male</label>
-                    <label class="register__left-check-box_item"><input type="checkbox">Female</label>
+                <div class="register__left-radio-box">
+                    <label class="register__left-radio-box_item">
+                        <input class="register__left-radio-box_item-input" type="radio" name="gender" value="male"> Male
+                    </label>
+                    <label class="register__left-radio-box_item">
+                        <input class="register__left-radio-box_item-input" type="radio" name="gender" value="female"> Female
+                    </label>
                 </div>
+                
 
                 <h2 class="register__left-name">Login details</h2>
                 <input class="register__left-input" placeholder="Email" type="email">
@@ -84,8 +89,7 @@
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.95948C0 4.77162 0.0746263 4.59146 0.207462 4.45862C0.340297 4.32579 0.52046 4.25116 0.708318 4.25116H15.583C15.7708 4.25116 15.951 4.32579 16.0838 4.45862C16.2167 4.59146 16.2913 4.77162 16.2913 4.95948C16.2913 5.14734 16.2167 5.3275 16.0838 5.46033C15.951 5.59317 15.7708 5.6678 15.583 5.6678H0.708318C0.52046 5.6678 0.340297 5.59317 0.207462 5.46033C0.0746263 5.3275 0 5.14734 0 4.95948Z" fill="white"/>
                         </svg>
                         </button>
-                
-            </div>
+            </form>
             <aside class="register__right">
                 <h2 class="register__right-h2">LOYALTY HAS ITS PERKS</h2>
                 <p class="register__right-p">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>

@@ -250,13 +250,13 @@ input:focus {
   background: #F16D7F;
   color: #FFFFFF;
 }
-.register__left-check-box {
+.register__left-radio-box {
   display: flex;
   gap: 30px;
   margin-top: 28px;
   margin-bottom: 33px;
 }
-.register__left-check-box_item {
+.register__left-radio-box_item {
   position: relative;
   height: 17px;
   display: flex;

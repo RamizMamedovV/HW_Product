@@ -79,6 +79,19 @@ svg.no-hover:hover path {
   transition: right 0.3s;
 }
 
+.head {
+  background: #F5F3F4;
+  padding-top: 58px;
+  padding-bottom: 64px;
+}
+.head__h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+}
+
 .subscribe {
   background-image: url(./img/photo\ subscribe.png);
   background-color: rgba(244, 244, 244, 0.7);

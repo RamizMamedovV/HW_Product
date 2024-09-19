@@ -1,4 +1,4 @@
-@import '../vars';
+@import './vars';
 
 // $widthSite: 1140px;
 // $svg_txt_orange: #F16D7F;
@@ -94,6 +94,21 @@ svg.no-hover:hover path{
     background-color: #FFF;
     box-shadow: 6px 4px 35px rgba(239, 83, 83, 0.21);
     transition: right .3s;
+}
+
+
+.head {
+    background: $cart_bg_color;
+    padding-top: 58px;
+    padding-bottom: 64px;
+
+    &__h1 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: $svg_txt_orange;
+    }
 }
 
 .subscribe {

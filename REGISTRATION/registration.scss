@@ -10,6 +10,7 @@ $color__input-border: #A4A4A4;
     align-items: center;
 }
 
+
 .register {
     display: flex;
     gap: 128px;
@@ -90,18 +91,6 @@ $color__input-border: #A4A4A4;
             font-size: 11px;
             line-height: 13px;
             color: $color_text;
-
-            // &-input {
-
-            //     display: inline-block;
-            //     width: 20px;
-            //     height: 20px;
-            //     border-radius: 50%;
-            //     /* Круг вместо квадрата */
-            //     border: 2px solid #000;
-            //     /* Обводка круга */
-            //     position: relative;
-            // }
         }
 
     }

@@ -267,24 +267,26 @@ input:focus {
 }
 .product__boxr {
   position: absolute;
-  left: -49px;
-  top: 156px;
+  justify-content: space-between;
+  left: 0px;
+  top: 154px;
   background-color: #F7F7F7;
   box-sizing: border-box;
   height: 740px;
+  width: 1140px;
 }
 .product__page-link {
   display: block;
 }
 .product__img {
-  max-width: 1140px;
+  max-width: 1046px;
 }
 .product__sub_box {
   border: 1px solid black;
   width: 1140px;
   height: 600px;
   position: absolute;
-  top: 833px;
+  top: 824px;
   left: 0px;
   background-color: white;
   color: F16D7F;

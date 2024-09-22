@@ -36,11 +36,15 @@
     &__boxr {
         position: absolute;
         @extend %flex_al-it__center;
-        left: -49px;
-        top: 156px;
+        justify-content: space-between;
+        left: 0px;
+        top: 154px;
         background-color: #F7F7F7;
+        // background-image: url(./img/new_arrival.png);
         box-sizing: border-box;
         height: 740px;
+        width: $widthSite;
+        // background-attachment: inherit;
     }
 
     &__page-link {
@@ -52,7 +56,8 @@
         // position: absolute;
         // left: -254px;
         // top: 156px;
-        max-width: $widthSite;
+        // max-width: $widthSite;
+        max-width: calc($widthSite - 94px);
     }
 
     &__sub_box {
@@ -60,7 +65,7 @@
         width: 1140px;
         height: 600px;
         position: absolute;
-        top: 833px;
+        top: 824px;
         left: 0px;
         background-color: white;
         color: F16D7F;

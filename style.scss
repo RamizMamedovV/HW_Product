@@ -1,49 +1,6 @@
-@import 'vars';
+@import './vars';
+@import './partial';
 
-body {
-    font-family: "Lato", system-ui;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-summary {
-    list-style: none;
-}
-
-%flex_al-it__center {
-    display: flex;
-    align-items: center;
-}
-
-svg:hover path {
-    fill: $svg_txt_orange;
-}
-
-.center {
-    padding-left: calc(50% - $widthSite / 2);
-    padding-right: calc(50% - $widthSite / 2);
-}
-
-
-.header {
-    @extend %flex_al-it__center;
-    justify-content: space-between;
-    height: 75px;
-    background-color: #222;
-
-    &__left {
-        @extend %flex_al-it__center;
-        gap: 36px;
-    }
-
-    &__right {
-        @extend %flex_al-it__center;
-        gap: 40px;
-    }
-}
 
 .product {
     display: flex;
@@ -53,6 +10,7 @@ svg:hover path {
         @extend %flex_al-it__center;
         justify-content: space-between;
         position: relative;
+        background-color: #F8F3F4;
     }
 
     &__h1 {
@@ -174,18 +132,20 @@ svg:hover path {
         }
     }
 
-
     &__content {
-        @extend %flex_al-it__center;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(3, 360px);
+        grid-template-rows: repeat(3, 606px);
         gap: 30px;
-        margin-bottom: 30px;
+        padding-bottom: 128px;
     }
 
     &__item {
         @extend %flex_al-it__center;
         flex-direction: column;
         min-width: 360px;
+        max-height: 580px;
+        margin-bottom: 30px;
 
         &_img_box {
             @extend %flex_al-it__center;
@@ -228,137 +188,8 @@ svg:hover path {
             color: $svg_txt_orange;
         }
     }
+
+    
 }
 
 
-.subscribe {
-    background-image: url(./img/photo\ subscribe.png);
-    background-color: rgba(244, 244, 244, 0.70);
-    background-blend-mode: overlay;
-    min-height: 448px;
-    background-size: cover;
-    padding-top: 97px;
-    padding-bottom: 126px;
-    @extend %flex_al-it__center;
-    justify-content: space-around;
-    gap: 336px;
-    min-height: 448px;
-
-    &__left {
-        @extend %flex_al-it__center;
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    &__p {
-        // font-family: var(--font-family);
-        font-weight: 400;
-        font-size: 20px;
-        text-align: center;
-        color: #222224;
-        max-width: 360px;
-    }
-
-    &__right {
-        @extend %flex_al-it__center;
-        flex-direction: column;
-    }
-
-    &__h2 {
-        // font-family: var(--font-family);
-        font-weight: 700;
-        font-size: 24px;
-        text-align: center;
-        color: #222224;
-    }
-
-    &__p {
-        font-weight: 400;
-        font-size: 18px;
-        text-align: center;
-        color: #222224;
-        margin-bottom: 42px;
-    }
-
-    &__input {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        display: flex;
-        align-items: center;
-        color: #222224;
-        border-top-left-radius: 50px;
-        border-bottom-left-radius: 50px;
-        height: 48px;
-        outline: none;
-        border: 0;
-        padding-left: 16px;
-        background: #E1E1E1;
-    }
-
-    &__input:hover {
-        background: rgba(0, 0, 0, 0);
-        color: #000;
-        box-shadow: inset 0 0 0 3px $svg_txt_orange;
-    }
-
-    &__button {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        @extend %flex_al-it__center;
-        text-align: center;
-        background: $svg_txt_orange;
-        border-bottom-right-radius: 50px;
-        border-top-right-radius: 50px;
-        height: 48px;
-        border: 0;
-        background-color: #F16D7F;
-        padding: 16px 22px;
-        color: #FFF;
-        border: none;
-        // background: #3a7999;
-        // color: #f2f2f2;
-        // padding: 10px;
-        // font-size: 18px;
-        // border-radius: 5px;
-        // position: relative;
-        // box-sizing: border-box;
-        // transition: all 500ms ease;
-    }
-
-    &__button:hover {
-        background: rgba(0, 0, 0, 0);
-        color: #000;
-        box-shadow: inset 0 0 0 3px $svg_txt_orange;
-    }
-
-    &__box_input_btn {
-        @extend %flex_al-it__center;
-    }
-}
-
-input:focus {
-    outline: none;
-    border: 0px;
-}
-
-.social {
-    background: #000;
-    @extend %flex_al-it__center;
-    gap: 812px;
-
-    &__txt {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
-        color: #FBFBFB;
-    }
-
-    &__brand-svg:hover .social-svg {
-        fill: white;
-    }
-}

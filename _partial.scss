@@ -241,3 +241,72 @@ input:focus {
         fill: white;
     }
 }
+
+@media (maxwidth: 1150px) {
+
+}
+@media (max-width: 1024px) {
+
+    $widthSite: 780px;
+
+    .center {
+        padding-left: calc(50% - $widthSite / 2);
+        padding-right: calc(50% - $widthSite / 2);
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 64px;
+    }
+
+    .carts {
+        padding: 0;
+        padding-top: 59px;
+        align-items: center;
+
+        &__item {
+            width: calc($widthSite - 32px);
+        }
+
+        &__buttons {
+            gap: 49px;
+            justify-content: center;
+
+        }
+    }
+
+    .form {
+        padding: 0;
+        flex-direction: row;
+        align-items: center;
+        gap: 17px;
+        padding-bottom: 128px;
+
+        &__total {
+            margin: 0;
+        }
+    }
+
+    .subscribe {
+        // display: flex;
+        // align-items: center;
+        flex-direction: column;
+        gap: 80px;
+    }
+}
+
+@media (max-width: 780px) {
+
+    $widthSite: 600px;
+
+    .center {
+        padding-left: calc(50% - $widthSite / 2);
+        padding-right: calc(50% - $widthSite / 2);
+    }
+
+    .form {
+        flex-direction: column;
+    }
+}

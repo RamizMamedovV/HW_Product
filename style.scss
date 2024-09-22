@@ -146,7 +146,7 @@
             padding: 14px 56px 9px 24px;
         }
 
-        &_btn:hover{
+        &_btn:hover {
             background-color: white;
             border: 1px solid $svg_txt_orange;
             color: $svg_txt_orange;
@@ -210,7 +210,33 @@
         }
     }
 
-    
+
 }
 
+@media (max-width: 1140px) {
+    $widthSite: 1024px;
 
+    .not-display {
+        display: none;
+    }
+
+    .product {
+
+        &__content {
+            padding-left: calc(50% - 100vw / 2);
+            padding-right: calc(50% - 100vw / 2);
+            display: grid;
+            grid-template-columns: repeat(2, 360px);
+            grid-template-rows: repeat(3, 606px);
+            gap: 13px;
+            grid-row-end: inherit;
+
+        }
+
+        &__boxr {
+            width: $widthSite;
+        }
+    }
+
+
+}

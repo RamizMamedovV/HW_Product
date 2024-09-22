@@ -406,4 +406,22 @@ input:focus {
   font-weight: 400;
   font-size: 16px;
   color: #F16D7F;
+}
+
+@media (max-width: 1140px) {
+  .not-display {
+    display: none;
+  }
+  .product__content {
+    padding-left: calc(50% - 50vw);
+    padding-right: calc(50% - 50vw);
+    display: grid;
+    grid-template-columns: repeat(2, 360px);
+    grid-template-rows: repeat(3, 606px);
+    gap: 13px;
+    grid-row-end: inherit;
+  }
+  .product__boxr {
+    width: 1024px;
+  }
 }/*# sourceMappingURL=style.css.map */

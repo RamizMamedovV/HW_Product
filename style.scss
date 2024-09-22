@@ -33,10 +33,26 @@
         color: $svg_txt_orange;
     }
 
-    &__img {
+    &__boxr {
         position: absolute;
-        left: -254px;
+        @extend %flex_al-it__center;
+        left: -49px;
         top: 156px;
+        background-color: #F7F7F7;
+        box-sizing: border-box;
+        height: 740px;
+    }
+
+    &__page-link {
+        display: block;
+        // position: absolute;
+    }
+
+    &__img {
+        // position: absolute;
+        // left: -254px;
+        // top: 156px;
+        max-width: $widthSite;
     }
 
     &__sub_box {

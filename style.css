@@ -42,6 +42,10 @@ svg.no-hover:hover path {
   padding-right: calc(50% - 570px);
 }
 
+.cursor {
+  cursor: pointer;
+}
+
 .box-for-burger-menu {
   overflow: hidden;
 }
@@ -100,7 +104,7 @@ svg.no-hover:hover path {
 }
 
 .subscribe {
-  background-image: url(./img/photo\ subscribe.png);
+  background-image: url(./img/photo-subscribe.png);
   background-color: rgba(244, 244, 244, 0.7);
   background-blend-mode: overlay;
   min-height: 448px;

@@ -38,10 +38,16 @@ svg.no-hover:hover path {
   padding-right: calc(50% - 570px);
 }
 
+.box-for-burger-menu {
+  overflow: hidden;
+}
+
 .header {
   justify-content: space-between;
   height: 75px;
   background-color: #222;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .header__left {
   gap: 36px;
@@ -57,10 +63,6 @@ svg.no-hover:hover path {
 }
 #burger:checked ~ .burger__sub-nav {
   right: 0;
-}
-
-.box-for-burger-menu {
-  overflow: hidden;
 }
 
 .burger__sub-nav {
@@ -193,6 +195,12 @@ input:focus {
   fill: white;
 }
 
+@media (max-width: 1160px) {
+  .center {
+    padding-left: calc(50% - 550px);
+    padding-right: calc(50% - 550px);
+  }
+}
 @media (max-width: 1024px) {
   .center {
     padding-left: calc(50% - 390px);

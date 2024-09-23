@@ -46,11 +46,17 @@ svg.no-hover:hover path{
     padding-right: calc(50% - $widthSite / 2);
 }
 
+.box-for-burger-menu {
+    overflow: hidden;
+}
+
 .header {
     @extend %flex_al-it__center;
     justify-content: space-between;
     height: 75px;
     background-color: #222;
+    padding-left: 16px;
+    padding-right: 16px;
 
     &__left {
         @extend %flex_al-it__center;
@@ -73,10 +79,6 @@ svg.no-hover:hover path{
         right: 0;
         
     }
-}
-
-.box-for-burger-menu {
-    overflow: hidden;
 }
 
 .burger__sub-nav {
@@ -242,9 +244,16 @@ input:focus {
     }
 }
 
-@media (maxwidth: 1150px) {
+@media (max-width: 1160px) {
 
+    $widthSite: 1100px;
+
+    .center {
+        padding-left: calc(50% - $widthSite / 2);
+        padding-right: calc(50% - $widthSite / 2);
+    }
 }
+
 @media (max-width: 1024px) {
 
     $widthSite: 780px;

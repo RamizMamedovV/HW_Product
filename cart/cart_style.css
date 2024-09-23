@@ -2,6 +2,10 @@ body {
   font-family: "Lato", system-ui;
 }
 
+.orange__txt {
+  color: #F16D7F;
+}
+
 .box-for-burger-menu {
   overflow: hidden;
 }
@@ -85,6 +89,7 @@ svg.no-hover:hover path {
   background: #F5F3F4;
   padding-top: 58px;
   padding-bottom: 64px;
+  padding-left: 16px;
 }
 .head__h1 {
   font-style: normal;
@@ -248,32 +253,10 @@ input:focus {
     flex-direction: column;
   }
 }
-.form__p-h2, .form__p, .carts__buttons, .carts__cart-info_p-box, .header, .header__left, .header__right, .burger__sub-nav, .subscribe, .subscribe__left, .subscribe__right, .subscribe__button, .subscribe__box_input_btn, .social {
-  display: flex;
-  align-items: center;
-}
-
-.orange__txt {
-  color: #F16D7F;
-}
-
 .btn_hover:hover {
   color: white;
   background: #F16D7F;
   border: none;
-}
-
-.head {
-  background: #F5F3F4;
-  padding-top: 58px;
-  padding-bottom: 64px;
-}
-.head__h1 {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
-  color: #F16D7F;
 }
 
 .main {
@@ -488,7 +471,17 @@ input:focus {
     padding-left: calc(50% - 300px);
     padding-right: calc(50% - 300px);
   }
+  .head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .form {
     flex-direction: column;
+    gap: 48px;
+    padding-bottom: 96px;
+  }
+  .carts__item {
+    width: 100vw;
   }
 }/*# sourceMappingURL=cart_style.css.map */

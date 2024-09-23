@@ -8,6 +8,10 @@ body {
     font-family: "Lato", system-ui;
 }
 
+.orange__txt {
+    color: $svg_txt_orange;
+}
+
 .box-for-burger-menu {
     overflow: hidden;
 }
@@ -103,6 +107,7 @@ svg.no-hover:hover path{
     background: $cart_bg_color;
     padding-top: 58px;
     padding-bottom: 64px;
+    padding-left: 16px;
 
     &__h1 {
         font-style: normal;
@@ -318,4 +323,5 @@ input:focus {
     .form {
         flex-direction: column;
     }
+
 }

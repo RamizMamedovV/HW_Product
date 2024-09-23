@@ -2,14 +2,14 @@
 @import '../vars';
 
 
-%flex_al-it__center {
-    display: flex;
-    align-items: center;
-}
+// %flex_al-it__center {
+//     display: flex;
+//     align-items: center;
+// }
 
-.orange__txt {
-    color: $svg_txt_orange;
-}
+// .orange__txt {
+//     color: $svg_txt_orange;
+// }
 
 .btn_hover:hover {
     color: white;
@@ -17,19 +17,19 @@
     border: none;
 }
 
-.head {
-    background: $cart_bg_color;
-    padding-top: 58px;
-    padding-bottom: 64px;
+// .head {
+//     background: $cart_bg_color;
+//     padding-top: 58px;
+//     padding-bottom: 64px;
 
-    &__h1 {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 29px;
-        color: $svg_txt_orange;
-    }
-}
+//     &__h1 {
+//         font-style: normal;
+//         font-weight: 400;
+//         font-size: 24px;
+//         line-height: 29px;
+//         color: $svg_txt_orange;
+//     }
+// }
 
 .main {
     display: flex;
@@ -303,7 +303,21 @@
         padding-right: calc(50% - $widthSite / 2);
     }
 
+    .head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .form {
         flex-direction: column;
+        gap: 48px;
+        padding-bottom: 96px;
+    }
+
+    .carts__item {
+        width: 100vw;
+
     }
 }
+

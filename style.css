@@ -2,6 +2,10 @@ body {
   font-family: "Lato", system-ui;
 }
 
+.orange__txt {
+  color: #F16D7F;
+}
+
 .box-for-burger-menu {
   overflow: hidden;
 }
@@ -85,6 +89,7 @@ svg.no-hover:hover path {
   background: #F5F3F4;
   padding-top: 58px;
   padding-bottom: 64px;
+  padding-left: 16px;
 }
 .head__h1 {
   font-style: normal;

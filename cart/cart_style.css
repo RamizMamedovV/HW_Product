@@ -204,59 +204,6 @@ input:focus {
   fill: white;
 }
 
-@media (max-width: 1160px) {
-  .center {
-    padding-left: calc(50% - 550px);
-    padding-right: calc(50% - 550px);
-  }
-}
-@media (max-width: 1024px) {
-  .center {
-    padding-left: calc(50% - 390px);
-    padding-right: calc(50% - 390px);
-  }
-  .main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 64px;
-  }
-  .carts {
-    padding: 0;
-    padding-top: 59px;
-    align-items: center;
-  }
-  .carts__item {
-    width: 748px;
-  }
-  .carts__buttons {
-    gap: 49px;
-    justify-content: center;
-  }
-  .form {
-    padding: 0;
-    flex-direction: row;
-    align-items: center;
-    gap: 17px;
-    padding-bottom: 128px;
-  }
-  .form__total {
-    margin: 0;
-  }
-  .subscribe {
-    flex-direction: column;
-    gap: 80px;
-  }
-}
-@media (max-width: 780px) {
-  .center {
-    padding-left: calc(50% - 300px);
-    padding-right: calc(50% - 300px);
-  }
-  .form {
-    flex-direction: column;
-  }
-}
 .btn_hover:hover {
   color: white;
   background: #F16D7F;

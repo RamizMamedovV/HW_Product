@@ -13,7 +13,10 @@ $color__input-border: #A4A4A4;
 
 .register {
     display: flex;
-    gap: 128px;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+    gap: 22px;
 
     &__left {
         display: flex;
@@ -117,6 +120,57 @@ $color__input-border: #A4A4A4;
             font-size: 24px;
             line-height: 29px;
             color: $color_text;
+
         }
+    }
+}
+
+
+@media (max-width: 780px) {
+
+    .register {
+
+        gap: 22px;
+
+        &__right {
+
+            &-p {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                color: #000000;
+            }
+
+        }
+    }
+
+    .subscribe {
+        flex-direction: column;
+        gap: 80px;
+    }
+}
+
+@media (max-width: 660px) {
+
+    .head {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .register {
+
+        flex-direction: column;
+        gap: 40px;
+        padding-bottom: 96px;
+    }
+
+    .social {
+        padding-top: 44px;
+        padding-bottom: 22px;
+        flex-direction: column-reverse;
+        gap: 22px;
     }
 }

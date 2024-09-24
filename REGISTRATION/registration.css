@@ -109,10 +109,8 @@ svg.no-hover:hover path {
   background-blend-mode: overlay;
   min-height: 448px;
   background-size: cover;
-  padding-top: 97px;
-  padding-bottom: 126px;
-  justify-content: space-around;
-  gap: 336px;
+  padding: 97px 16px 126px;
+  justify-content: space-between;
   min-height: 448px;
 }
 .subscribe__left {
@@ -192,6 +190,8 @@ input:focus {
 .social {
   background: #000;
   justify-content: space-between;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .social__txt {
   font-style: normal;
@@ -211,7 +211,10 @@ input:focus {
 
 .register {
   display: flex;
-  gap: 128px;
+  justify-content: space-between;
+  padding-left: 16px;
+  padding-right: 16px;
+  gap: 22px;
 }
 .register__left {
   display: flex;
@@ -304,4 +307,39 @@ input:focus {
   font-size: 24px;
   line-height: 29px;
   color: #222;
+}
+
+@media (max-width: 780px) {
+  .register {
+    gap: 22px;
+  }
+  .register__right-p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+  .subscribe {
+    flex-direction: column;
+    gap: 80px;
+  }
+}
+@media (max-width: 660px) {
+  .head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .register {
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 96px;
+  }
+  .social {
+    padding-top: 44px;
+    padding-bottom: 22px;
+    flex-direction: column-reverse;
+    gap: 22px;
+  }
 }/*# sourceMappingURL=registration.css.map */

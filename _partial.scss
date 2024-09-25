@@ -106,6 +106,37 @@ svg.no-hover:hover path{
     transition: right .3s;
 }
 
+.product {
+    &__nav {
+        @extend %flex_al-it__center;
+        justify-content: end;
+        gap: 16px;
+        padding-top: 68px;
+        padding-bottom: 68px;
+    }
+
+    &__breadcrumbs {
+        display: flex;
+        gap: 8px;
+        list-style-type: none;
+        cursor: pointer;
+
+        &-li {
+            display: flex;
+            gap: 8px;
+        }
+
+        &-li:not(:last-child)::after {
+            content: '/';
+        }
+
+        &-li:last-child {
+            font-weight: 700;
+            color: $svg_txt_orange;
+        }
+
+    }
+}
 
 .head {
     background: $cart_bg_color;

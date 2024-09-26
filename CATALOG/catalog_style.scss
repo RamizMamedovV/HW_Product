@@ -1,85 +1,6 @@
 @import '../vars';
 @import '../partial';
 
-// body {
-//     font-family: "Lato", system-ui;
-// }
-
-// * {
-//     margin: 0;
-//     padding: 0;
-//     text-decoration: none;
-// }
-
-// summary {
-//     list-style: none;
-// }
-
-// %flex_al-it__center {
-//     display: flex;
-//     align-items: center;
-// }
-
-// svg:hover path {
-//     fill: $svg_txt_orange;
-// }
-
-// .center {
-//     padding-left: calc(50% - $widthSite / 2);
-//     padding-right: calc(50% - $widthSite / 2);
-// }
-
-
-// .header {
-//     @extend %flex_al-it__center;
-//     justify-content: space-between;
-//     height: 75px;
-//     background-color: #222;
-
-//     &__left {
-//         @extend %flex_al-it__center;
-//         gap: 36px;
-//     }
-
-//     &__right {
-//         @extend %flex_al-it__center;
-//         gap: 40px;
-//         position: relative;
-//     }
-
-// }
-
-// #burger  {
-//     position: absolute;
-//     visibility: hidden;
-
-//     &:checked ~ .burger__sub-nav{
-//         right: 0;
-        
-//     }
-// }
-
-// .box-for-burger-menu {
-//     overflow: hidden;
-// }
-
-// .burger__sub-nav {
-//     padding: 30px;
-//     box-sizing: border-box;
-//     @extend %flex_al-it__center;
-//     flex-direction: column;
-//     gap: 15px;
-//     position: absolute;
-//     width: 232px;
-//     height: 300px;
-//     z-index: 1;
-//     right: -1000px;
-//     top: 50px;
-//     background-color: #FFF;
-//     box-shadow: 6px 4px 35px rgba(239, 83, 83, 0.21);
-//     transition: right .3s;
-// }
-
 
 .product {
     display: flex;
@@ -270,12 +191,13 @@
             background-color: #F7F7F7;
         }
 
-        &_h3 {
+        &_a {
             font-family: $font-Lato;
             font-weight: 400;
             font-size: 13px;
             color: #000;
             padding-bottom: 16px;
+            cursor: pointer;
         }
 
         &_p {
@@ -621,30 +543,12 @@
     }
 }
 
-// input:focus {
-//     outline: none;
-//     border: 0px;
-// }
-
-// .social {
-//     background: #000;
-//     @extend %flex_al-it__center;
-//     justify-content: space-between;
-//     &__txt {
-//         font-style: normal;
-//         font-weight: 400;
-//         font-size: 16px;
-//         line-height: 19px;
-//         color: #FBFBFB;
-//     }
-
-//     &__brand-svg:hover .social-svg {
-//         fill: white;
-//     }
-// }
-
 
 @media (max-width: 1140px) {
+
+    .display-no780 {
+        display: none;
+    }
 
     .product {
 
@@ -689,6 +593,10 @@
             gap: 16px;
             justify-content: center;
         }
+    }
+
+    .choice-font {
+        font-size: 12px;
     }
 
     .subscribe {

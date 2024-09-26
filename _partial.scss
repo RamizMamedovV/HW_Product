@@ -36,12 +36,12 @@ svg:hover path {
 }
 
 // example1 for svg by id
-#no-hover:hover path{
+#no-hover:hover path {
     fill: inherit;
 }
 
 // example2 for svg by class
-svg.no-hover:hover path{
+svg.no-hover:hover path {
     fill: inherit;
 }
 
@@ -79,13 +79,13 @@ svg.no-hover:hover path{
 
 }
 
-#burger  {
+#burger {
     position: absolute;
     visibility: hidden;
 
-    &:checked ~ .burger__sub-nav{
+    &:checked~.burger__sub-nav {
         right: 0;
-        
+
     }
 }
 
@@ -287,21 +287,11 @@ input:focus {
 
 // @media (max-width: 1160px) {
 
-//     $widthSite: 1100px;
-
-//     .center {
-//         padding-left: calc(50% - $widthSite / 2);
-//         padding-right: calc(50% - $widthSite / 2);
-//     }
 // }
 
 // @media (max-width: 1024px) {
 
-//     $widthSite: 780px;
 
-//     .center {
-//         padding-left: calc(50% - $widthSite / 2);
-//         padding-right: calc(50% - $widthSite / 2);
 //     }
 
 //     .main {
@@ -347,17 +337,24 @@ input:focus {
 //     }
 // }
 
-// @media (max-width: 780px) {
+@media (max-width: 780px) {
 
-//     $widthSite: 600px;
+    .subscribe {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 80px;
+    }
 
-//     .center {
-//         padding-left: calc(50% - $widthSite / 2);
-//         padding-right: calc(50% - $widthSite / 2);
-//     }
+    .social {
+        padding-top: 44px;
+        padding-bottom: 22px;
+        flex-direction: column-reverse;
+        gap: 22px;
+    }
 
-//     .form {
-//         flex-direction: column;
-//     }
+    // .form {
+    //     flex-direction: column;
+    // }
 
-// }
+}

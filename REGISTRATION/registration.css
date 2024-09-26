@@ -228,6 +228,20 @@ input:focus {
   fill: white;
 }
 
+@media (max-width: 780px) {
+  .subscribe {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+  }
+  .social {
+    padding-top: 44px;
+    padding-bottom: 22px;
+    flex-direction: column-reverse;
+    gap: 22px;
+  }
+}
 .register__left-btn, .header, .header__left, .header__right, .burger__sub-nav, .product__nav, .subscribe, .subscribe__left, .subscribe__right, .subscribe__button, .subscribe__box_input_btn, .social {
   display: flex;
   align-items: center;
